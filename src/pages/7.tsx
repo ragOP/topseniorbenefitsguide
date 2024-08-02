@@ -8,7 +8,7 @@ import { scrollTo } from "../utils";
 import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head_bg from "../assets/hero5.png";
-import HeaderLogo from "../assets/headerlogo.png";
+import HeaderLogo from "../assets/sawal.png";
 import Headline from "../assets/headline_spandeb1.png";
 import {  Link } from 'react-router-dom';
 // google tag manager
@@ -342,13 +342,13 @@ export default function Fifth_SP() {
   return (
     <div>
      {/* <ToastContainer /> */}
-     <div style={{ marginBottom: '4px' }} className="top-sticky-blue-test2" id="top">
+     {/* <div style={{ marginBottom: '4px' }} className="top-sticky-blue-test2" id="top"> */}
     <img 
       src={HeaderLogo} 
       alt="head" 
-      className="header-logo"
+     className="top-sticky-blue-test2"
     />
-  </div>
+  {/* </div> */}
 
       {step === "process" ? (
         <>
