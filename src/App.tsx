@@ -27,6 +27,7 @@ import Food from './pages/Food';
 import Late from './pages/Late';
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
+import Toast from './pages/Toast';
 function App() {
  console.log('s');
   return (
@@ -37,6 +38,7 @@ function App() {
           {/* c */}
 
           <Route  path="/"  element = {<S />} />
+          <Route  path="/toast"  element = {<Toast />} />
           <Route path = "/engmedgdn" element = {<Party />} />
           <Route path = "/ip" element = {<Ip />} />
           <Route path = "/engaca1" element = {<First_EN />} />
