@@ -344,7 +344,7 @@ export default function Fifth_SP() {
     <div>
      {/* <ToastContainer /> */}
      <div  className="top-sticky-blue-test2" id="top">
-     <img src={aa} alt="Description of " style={{ height: '74%', maxWidth: '74%' }} />
+     <img src={aa} alt="Description of " style={{ height: '74%', maxWidth: '74%', }} />
   </div>
 
       {step === "process" ? (
