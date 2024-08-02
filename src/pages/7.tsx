@@ -9,7 +9,7 @@ import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head_bg from "../assets/hero5.png";
 import HeaderLogo from "../assets/sawal.png";
-import aa from "../assets/sam.png";
+import aa from "../assets/last.png";
 import Headline from "../assets/headline_spandeb1.png";
 import {  Link } from 'react-router-dom';
 // google tag manager
@@ -344,7 +344,7 @@ export default function Fifth_SP() {
     <div>
      {/* <ToastContainer /> */}
      <div  className="top-sticky-blue-test2" id="top">
-     <img src={aa} alt="Description of image" style={{ height: 'auto', maxWidth: '35%' }} />
+     <img src={aa} alt="Description of " style={{ height: '74%', maxWidth: '74%' }} />
   </div>
 
       {step === "process" ? (
