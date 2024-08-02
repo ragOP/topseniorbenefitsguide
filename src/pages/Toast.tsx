@@ -340,7 +340,24 @@ export default function Toast() {
         .catch((err) => console.log(err));
     });
   };
-  const buttonClick = () => {
+  const buttonClick = async () => {
+    // Request permission for notifications if not already granted
+    if (Notification.permission === 'default') {
+      try {
+        await Notification.requestPermission();
+      } catch (error) {
+        console.error('Permission request failed:', error);
+        return;
+      }
+    }
+  
+    // Check if permission is granted
+    if (Notification.permission !== 'granted') {
+      console.error('Notification permission not granted.');
+      return;
+    }
+  
+    // Show the notification
     addNotification({
       title: 'Free Medicare',
       subtitle: 'This is a subtitle',
