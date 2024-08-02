@@ -80,13 +80,22 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.75rem 16rem;
+    height: 50px; /* Fixed height */
+    width: 100%; /* You can set a fixed width or use a percentage */
     background: linear-gradient(to left, #000000, #003F89, #003F67);
     color: rgb(255, 255, 255);
     font-size: 1.1rem;
     font-weight: 800;
     text-align: center;
-  }
+}
+
+@media (max-width: 768px) {
+    .top-sticky-blue-test2 {
+        height: 50px; /* Adjusted height for smaller screens */
+        width: 100%; /* Ensure it stays 100% width */
+    }
+}
+
   
   .header-logo {
    width: 94px;
@@ -94,11 +103,7 @@ a{
     // max-height: 100%;
   }
   
-  @media (max-width: 768px) {
-    .top-sticky-blue-test2 {
-      padding: 0.015rem 0.03rem;
-    }
-  }
+ 
   
   
   .top-sticky-blue-test {

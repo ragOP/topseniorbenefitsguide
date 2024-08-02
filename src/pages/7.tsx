@@ -9,6 +9,7 @@ import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head_bg from "../assets/hero5.png";
 import HeaderLogo from "../assets/sawal.png";
+import aa from "../assets/new.png";
 import Headline from "../assets/headline_spandeb1.png";
 import {  Link } from 'react-router-dom';
 // google tag manager
@@ -342,19 +343,18 @@ export default function Fifth_SP() {
   return (
     <div>
      {/* <ToastContainer /> */}
-     {/* <div style={{ marginBottom: '4px' }} className="top-sticky-blue-test2" id="top"> */}
-    <img 
-      src={HeaderLogo} 
-      alt="head" 
-     className="top-sticky-blue-test2"
-    />
-  {/* </div> */}
+     <div  className="top-sticky-blue-test2" id="top">
+     <img src={aa} alt="Description of image" style={{ height: 'auto', maxWidth: '20%' }} />
+  </div>
 
       {step === "process" ? (
         <>
           <div className="main-container-5">
+            
             <div className="main-descrition-5-5">
+              
               <div className="main-des-title-6-7">
+            
                 <b>
                 Older Americans May Be Eligible For New Benefits. Click Below To Check Eligibility.
                 </b>
