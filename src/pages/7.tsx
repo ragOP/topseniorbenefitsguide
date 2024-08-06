@@ -9,7 +9,7 @@ import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head_bg from "../assets/crash.jpg";
 import HeaderLogo from "../assets/sawal.png";
-import aa from "../assets/last.png";
+import aa from "../assets/newlogo.png";
 import Headline from "../assets/headline_spandeb1.png";
 import {  Link } from 'react-router-dom';
 // google tag manager
