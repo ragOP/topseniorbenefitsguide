@@ -396,7 +396,7 @@ export default function Fifth_SP() {
         <div className="checking">
           <div className="congrats">Congratulation!</div>
           <div className="top-description-5">
-          You Might Pre-Qualify for the Healthy Allowance.
+        Tap Below And Speak To A Live Agent About Medicare Plans You Maybe Be Eligible For
           </div>
           {/* <div className="spots-count">Spots remaining: 4</div> */}
           <div className="tap-direction">👇 TAP BELOW TO CALL 👇</div>
