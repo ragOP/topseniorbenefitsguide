@@ -204,6 +204,7 @@ export default function Fifth_SP() {
   const [yes,setYes]=useState("55-64")
   const [no,setNo]=useState("65-74")
   const [third,setThird]=useState("75+")
+  const [fourth, setFourth] = useState("Under 55");
   
 
   const stepProcess = () => {
@@ -272,7 +273,8 @@ export default function Fifth_SP() {
     if (quiz === "Select Your Age:  ") {
       setYes("Yes")
       setNo("No")
-      setThird("Yes")
+      setThird("Skip")
+      setFourth("No");
       
       setQuiz("Are you on Medicare Parts A & B?");
     } else {
@@ -309,7 +311,8 @@ export default function Fifth_SP() {
     if (quiz === "Are you over the age of 60?  ") {
       setYes("Yes")
       setNo("No")
-      setThird("Yes")
+      setThird("Skip")
+      setFourth("Skip");
       setQuiz("Are you on Medicare Parts A & B?");
     } else {
       setStep("Reviewing Your Answers...");
@@ -363,7 +366,7 @@ export default function Fifth_SP() {
               <img className="topic-img-middle-z" src={Head_bg} alt="head" />
               <div  style={{marginTop:'14px'}}className="main-des-5">
               {/* Americans over 65 years old may be eligible to claim the 2024 Grocery Allowance Card Americans may use the funds to fully cover their Groceries, Medicines, etc. */}
-              <b>How it works:</b> Complete this 60 second survey to check your eligibility. Hurry and claim your benefits!
+              <b>How it works:</b> Complete this survey to check your eligibility.
               </div>
               <div className="main-des-5"  style={{marginTop:'-5px'}}>
               {/* If you have not yet claimed your monthly allowance then answer the questions below and once approved <b>you will have your $3,600 Grocery Allowance mailed to you within a few days ready for use!</b> */}
@@ -375,15 +378,18 @@ export default function Fifth_SP() {
                 {quiz}
               </div>
               <div  className="answer">
+              {quiz === "Select Your Age:  " && <div className="answer-btn-5" onClick={handleQuizP} style={{"textTransform": "capitalize"}}>
+              {fourth}
+                </div>}
                 <div className="answer-btn-5" onClick={handleQuizP}>
               {yes}
                 </div>
                 <div className="answer-btn-5" onClick={handleQuizN}>
               {no}
                 </div>
-               {quiz === "Select Your Age:  " && <div className="answer-btn-5" onClick={handleQuizP}>
+               <div className="answer-btn-5" onClick={handleQuizP}>
               {third}
-                </div>}
+                </div>
               </div>
             </div>
           </div>
@@ -417,8 +423,16 @@ export default function Fifth_SP() {
         </div>
       )}
       <div className="footer2">
-      benefitsforusa.com is not an insurance or government or operating company but connects individuals with insurance providers and other affiliates. Plans are insured or covered by a Medicare Advantage organization with a Medicare contract and/or a Medicare-approved Part D sponsor. Enrollment in the plan depends on the plan’s contract renewal with Medicare. Possible options include, but are not limited to Major Medical Plans, Short Term Plans, Christian Health Plans, Health Sharing Plans, discount cards and Fixed Indemnity Plans. Descriptions are for informational purposes only and subject to change. myseniorsavingsjournal.com is not affiliated with any insurance plan nor does it represent or endorse any plan. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1–800 MEDICARE to get information on all of your options. By using this site, you acknowledge that you have read and agree to the Terms of Service, and Privacy Policy. Not affiliated with the U. S. government or federal Medicare program. A licensed agent may contact you regarding this insurance-related information.
-      disclaimer: There is no guarantee of specific results and the results can vary. Not all plans or benefits available in all areas.
+      <p>We represent Medicare Advantage HMO, PPO and PFFS organizations and stand-alone PDP prescription drug plans that are contracted with Medicare. Enrollment depends on the plan’s contract renewal."
+				</p>
+				<p>Not all plans offer all of these benefits. Benefits may vary by carrier and location. Limitations and exclusions may apply.
+				</p>
+				<p>Enrollment in Medicare/Medicare Advantage may be limited to certain times of the year unless you qualify for a Special Enrollment Period
+
+				</p>
+				<p>(Your Company Name/ Name of Website) is not connected with or endorsed by the US government or Federal Medicare program. This website is a solicitation for insurance and Medicare Advantage, Part D or Medicare supplement insurance comparison services. Medicare supplement insurance is available to those age 65 or older enrolled in Medicare Parts A and B, and in some states to those under age 65 eligible to Medicare due to disability or end stage renal disease.
+				</p>
+				<p>We do not offer every plan available in your area. Currently we represent [insert number of organizations] organizations which offer [insert number of plans] products in your area. Please contact Medicare.gov, 1–800–MEDICARE, or your local State Health Insurance Program (SHIP) to get information on all of your options.</p>
         <div className="terms2">
 
         <Link to="/terms-and-conditions">Terms & Conditions</Link> | 
