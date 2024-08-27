@@ -400,7 +400,7 @@ export default function Fifth_SP() {
         </div>
       ) : (
         <div className="checking">
-          <div className="congrats">Congratulation!</div>
+          <div className="congrats">Congratulations!</div>
           <div className="top-description-5">
         Tap Below And Speak To A Live Agent About Medicare Plans You Maybe Be Eligible For
           </div>
