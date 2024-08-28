@@ -359,7 +359,7 @@ export default function Fifth_SP() {
               <div className="main-des-title-6-7">
             
                 <b>
-                Older Americans May Be Eligible For New Benefits. Click Below To Check Eligibility.
+                Medicare Beneficiaries May Be Eligible For New Benefits. Click Below To Check Eligibility.
                 </b>
               </div>
               {/* <img className='topic-img-larger' src = {Headline} alt = "head"/> */}
