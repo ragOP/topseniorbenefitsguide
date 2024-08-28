@@ -402,7 +402,7 @@ export default function Fifth_SP() {
         <div className="checking">
           <div className="congrats">Congratulations!</div>
           <div className="top-description-5">
-          Tap Below And Speak To A Licensed Insurance Agent About Medicare Plans you may be eligible For
+          Tap Below And Speak To A Licensed Insurance Agent About Medicare Plans you may be eligible for
           </div>
           {/* <div className="spots-count">Spots remaining: 4</div> */}
           <div className="tap-direction">👇 TAP BELOW TO CALL 👇</div>
