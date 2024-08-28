@@ -405,7 +405,7 @@ export default function Fifth_SP() {
           Tap Below And Speak To A Licensed Insurance Agent About Medicare Plans you may be eligible for
           </div>
           {/* <div className="spots-count">Spots remaining: 4</div> */}
-          <div className="tap-direction">👇 TAP BELOW TO CALL 👇</div>
+          <div className="tap-direction">👇 TAP BELOW TO CALL  👇</div>
           <a href="tel:+18446720874">
             <div className="call-btn" onClick={handleCall}>
             CALL (844) 672-0874 | TTY 711
