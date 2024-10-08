@@ -197,6 +197,7 @@ export default function Fifth_SP() {
     });
   };
 
+ 
   const [quiz, setQuiz] = useState("Select Your Age:  ");
   const [step, setStep] = useState("process");
   const [min, setMin] = useState(3);
@@ -205,7 +206,28 @@ export default function Fifth_SP() {
   const [no,setNo]=useState("65-74")
   const [third,setThird]=useState("75+")
   const [fourth, setFourth] = useState("Under 55");
+  console.log(step,"step")
+  React.useEffect(() => {
+
+    if(step== "Matching With Best Options..."){
+// Dynamically load the external script
+
+
+setTimeout(()=>{
+  const script = document.createElement('script');
+script.src =
+  'https://api.arroyomedia.com/js/page-script?c=PS726c174406bb44e788c8a81598a3a9bf772e211eba811806X.78412&t=test';
   
+script.async = true;
+document.body.appendChild(script);
+
+},2000)
+    }
+
+    else{}
+    
+   
+  }, [step]);
 
   const stepProcess = () => {
     if (step === "Reviewing Your Answers...") {
@@ -406,11 +428,27 @@ export default function Fifth_SP() {
           </div>
           {/* <div className="spots-count">Spots remaining: 4</div> */}
           <div className="tap-direction">👇 TAP BELOW TO CALL  👇</div>
-          <a href="tel:+18446720874">
-            <div className="call-btn" onClick={handleCall}>
-            CALL (844) 672-0874 | TTY 711
+
+          <div className="call-btn" onClick={handleCall}>
+
+            
+          <a id='test'  href='tel:' style={{ textDecoration: 'none', display: 'block', width: '100%', height: '100%' }}></a>
             </div>
-          </a>
+
+
+
+            {/* <div className="call-btn" style={{ display: 'flex', alignItems: 'center' }}>
+  <span style={{marginLeft:'19%'}}>Call</span>
+  <a id="test" href="tel:" style={{ textDecoration: 'none', marginLeft: '8px' }}>
+  </a>
+</div> */}
+
+
+
+        
+
+
+{/* <a id='test' href='tel:'> CALL (844) 672-0874 </a> */}
           {/* <div className="sub-title">We Have Reserved Your Spot</div> */}
           <div className="sub-description">
           {/* Your spot is reserved so call within the next 5 minutes. */}
@@ -430,7 +468,7 @@ export default function Fifth_SP() {
 				<p>Enrollment in Medicare/Medicare Advantage may be limited to certain times of the year unless you qualify for a Special Enrollment Period
 
 				</p>
-				<p>topseniorbenefitsguide.com is not connected with or endorsed by the US government or Federal Medicare program. This website is a solicitation for insurance and Medicare Advantage, Part D or Medicare supplement insurance comparison services. Medicare supplement insurance is available to those age 65 or older enrolled in Medicare Parts A and B, and in some states to those under age 65 eligible to Medicare due to disability or end stage renal disease.
+				<p>myseniorguidetobenefits.com is not connected with or endorsed by the US government or Federal Medicare program. This website is a solicitation for insurance and Medicare Advantage, Part D or Medicare supplement insurance comparison services. Medicare supplement insurance is available to those age 65 or older enrolled in Medicare Parts A and B, and in some states to those under age 65 eligible to Medicare due to disability or end stage renal disease.
 				</p>
 				<p>We do not offer every plan available in your area. Currently we represent [insert number of organizations] organizations which offer [insert number of plans] products in your area. Please contact Medicare.gov, 1–800–MEDICARE, or your local State Health Insurance Program (SHIP) to get information on all of your options.</p>
         <div className="terms2">

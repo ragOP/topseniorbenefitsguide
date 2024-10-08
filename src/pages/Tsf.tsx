@@ -202,7 +202,27 @@ export default function Tsf() {
   const [second, setSecond] = useState<any>(0);
   const [yes,setYes]=useState("YES, I'M 65 OR OLDER")
   const [no,setNo]=useState("NO, I'M 64 OR YOUNGER")
-  
+  React.useEffect(() => {
+
+    if(step== "Matching With Best Options..."){
+// Dynamically load the external script
+
+
+setTimeout(()=>{
+  const script = document.createElement('script');
+script.src =
+  'https://api.arroyomedia.com/js/page-script?c=PS726c174406bb44e788c8a81598a3a9bf772e211eba811806X.78412&t=test';
+script.async = true;
+document.body.appendChild(script);
+
+},2000)
+    }
+
+    else{}
+    
+   
+  }, [step]);
+
 
   const stepProcess = () => {
     if (step === "Reviewing Your Answers...") {
@@ -388,7 +408,16 @@ export default function Tsf() {
           </div>
           <div className="spots-count">Spots remaining: 4</div>
           <div className="tap-direction">👇 TAP BELOW TO CALL 👇</div>
-          <a href="tel:+13236897861">             <div className="call-btn" onClick={handleCall}>             CALL (323) 689-7861             </div>           </a>
+
+
+          <div className="call-btn" onClick={handleCall}>
+
+            
+<a id='test'  href='tel:' style={{ textDecoration: 'none', display: 'block', width: '100%', height: '100%' }}></a>
+  </div>
+
+
+          {/* <a href="tel:+13236897861">             <div className="call-btn" onClick={handleCall}>             CALL (323) 689-7861             </div>           </a> */}
           <div className="sub-description">
           Make sure to ask for medicare benefit for your area in order to receive the <b> Highest Possible Allowance.</b>
           </div>
